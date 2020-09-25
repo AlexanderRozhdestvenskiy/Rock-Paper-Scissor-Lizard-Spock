@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - UI
     
     @IBOutlet weak var sheldonImage: UILabel!
     @IBOutlet weak var message: UILabel!
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var playAgain: UIButton!
     
+    // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI(sos: .start)
@@ -28,10 +31,10 @@ class ViewController: UIViewController {
         rock.layer.borderColor = UIColor.black.cgColor
         rock.layer.borderWidth = 4
         rock.layer.backgroundColor = UIColor.red.cgColor
-        // Do any additional setup after loading the view.
     }
 
-
+    // MARK: - Methods
+    
     func updateUI(sos: GameState) {
         if sos == .start {
             sheldonImage.text = "🤖"
@@ -53,6 +56,8 @@ class ViewController: UIViewController {
             playAgain.isHidden = false
         }
     }
+    
+    // MARK: - Action
     
     @IBAction func playerRock(_ sender: UIButton) {
         updateUI(sos: game(player: .rock, sheldon: random()))
@@ -94,9 +99,7 @@ class ViewController: UIViewController {
         rock.isHidden = true
     }
     
-    
     @IBAction func play(_ sender: UIButton) {
         updateUI(sos: .start)
     }
 }
-

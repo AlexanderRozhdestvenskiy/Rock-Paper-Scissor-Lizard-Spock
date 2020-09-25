@@ -30,8 +30,3 @@ func random() -> Sign {
         return .spock
     }
 }
-
-
-
-
-

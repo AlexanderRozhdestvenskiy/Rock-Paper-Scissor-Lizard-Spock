@@ -60,17 +60,25 @@
 		8955B1EA24DAD084005C9F2B /* Rock, Paper, Scissor, Lizard, Spock */ = {
 			isa = PBXGroup;
 			children = (
-				8955B1EB24DAD084005C9F2B /* AppDelegate.swift */,
-				8955B1ED24DAD084005C9F2B /* SceneDelegate.swift */,
+				89A6EC18251E3E41006A6124 /* Delegate */,
 				8955B1EF24DAD084005C9F2B /* ViewController.swift */,
-				8955B1F124DAD084005C9F2B /* Main.storyboard */,
 				8955B1FF24DAE018005C9F2B /* Sign.swift */,
 				8955B20124DAE073005C9F2B /* GameState.swift */,
+				8955B1F124DAD084005C9F2B /* Main.storyboard */,
 				8955B1F424DAD088005C9F2B /* Assets.xcassets */,
 				8955B1F624DAD088005C9F2B /* LaunchScreen.storyboard */,
 				8955B1F924DAD088005C9F2B /* Info.plist */,
 			);
 			path = "Rock, Paper, Scissor, Lizard, Spock";
+			sourceTree = "<group>";
+		};
+		89A6EC18251E3E41006A6124 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8955B1EB24DAD084005C9F2B /* AppDelegate.swift */,
+				8955B1ED24DAD084005C9F2B /* SceneDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
