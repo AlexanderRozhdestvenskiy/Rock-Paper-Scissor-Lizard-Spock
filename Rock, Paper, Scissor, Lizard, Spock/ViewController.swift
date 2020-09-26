@@ -12,25 +12,41 @@ class ViewController: UIViewController {
 
     // MARK: - UI
     
+    // Label
     @IBOutlet weak var sheldonImage: UILabel!
     @IBOutlet weak var message: UILabel!
+    
+    // Button
     @IBOutlet weak var rock: UIButton!
     @IBOutlet weak var paper: UIButton!
     @IBOutlet weak var scissor: UIButton!
     @IBOutlet weak var lizard: UIButton!
     @IBOutlet weak var spock: UIButton!
-    
     @IBOutlet weak var playAgain: UIButton!
+    
+    // MARK: - Let Constraints
+    
+    private let cornerRadius: CGFloat = 12
+    private let borderColor = UIColor.black.cgColor
+    private let borderWidth: CGFloat = 4
+    private let backgroundColor = UIColor.red.cgColor
     
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         updateUI(sos: .start)
-        rock.layer.cornerRadius = 12
-        rock.layer.borderColor = UIColor.black.cgColor
-        rock.layer.borderWidth = 4
-        rock.layer.backgroundColor = UIColor.red.cgColor
+        
+        rock.layer.cornerRadius = cornerRadius
+        rock.layer.borderColor = borderColor
+        rock.layer.borderWidth = borderWidth
+        rock.layer.backgroundColor = backgroundColor
+        
+        paper.layer.cornerRadius = cornerRadius
+        paper.layer.borderColor = borderColor
+        paper.layer.borderWidth = borderWidth
+        paper.layer.backgroundColor = backgroundColor
     }
 
     // MARK: - Methods
