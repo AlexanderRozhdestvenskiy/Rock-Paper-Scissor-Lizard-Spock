@@ -47,6 +47,21 @@ class ViewController: UIViewController {
         paper.layer.borderColor = borderColor
         paper.layer.borderWidth = borderWidth
         paper.layer.backgroundColor = backgroundColor
+        
+        scissor.layer.cornerRadius = cornerRadius
+        scissor.layer.borderColor = borderColor
+        scissor.layer.borderWidth = borderWidth
+        scissor.layer.backgroundColor = backgroundColor
+        
+        lizard.layer.cornerRadius = cornerRadius
+        lizard.layer.borderColor = borderColor
+        lizard.layer.borderWidth = borderWidth
+        lizard.layer.backgroundColor = backgroundColor
+        
+        spock.layer.cornerRadius = cornerRadius
+        spock.layer.borderColor = borderColor
+        spock.layer.borderWidth = borderWidth
+        spock.layer.backgroundColor = backgroundColor
     }
 
     // MARK: - Methods
